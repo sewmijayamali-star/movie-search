@@ -1,4 +1,4 @@
-/* ===== MODERN GLASS UI (UPDATED) ===== */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root{
@@ -29,7 +29,7 @@ body{
       #7c3aed 100%);
 }
 
-/* ===== CENTER TITLE ===== */
+
 body::before{
   content:"🎬 Movie Search";
   display:block;
@@ -39,20 +39,17 @@ body::before{
   margin-bottom:22px;
 }
 
-/* REMOVE previous subtitle */
 body::after{
   content:"";
   display:none;
 }
 
-/* Center all existing elements */
 #input, button, #title, #poster, #plot{
   max-width:900px;
   margin-left:auto;
   margin-right:auto;
 }
 
-/* ===== INPUT ===== */
 #input{
   display:block;
   width:100%;
@@ -76,7 +73,6 @@ body::after{
   border-color:rgba(255,255,255,0.4);
 }
 
-/* ===== BUTTON ===== */
 button{
   display:block;
   width:100%;
@@ -108,7 +104,6 @@ button{
   to{ background-position:100% 50%; }
 }
 
-/* ===== MOVIE TITLE ===== */
 #title{
   margin-top:24px;
   text-align:center;
@@ -116,8 +111,6 @@ button{
   font-weight:800;
 }
 
-/* ===== POSTER ===== */
-/* FULL IMAGE visible (NO CROP) */
 #poster{
   display:block;
   width:100%;
@@ -127,18 +120,14 @@ button{
   background:var(--glass);
   backdrop-filter: blur(12px);
   box-shadow:0 25px 70px rgba(0,0,0,0.55);
-
-  /* IMPORTANT CHANGES */
   max-height:none;
-  object-fit:contain;   /* show full image */
-}
+  object-fit:contain;  
 
-/* hide empty image */
+
 #poster[src=""]{
   display:none;
 }
 
-/* ===== PLOT ===== */
 #plot{
   margin-top:14px;
   padding:16px 18px;
@@ -152,7 +141,6 @@ button{
   font-size:14px;
 }
 
-/* ===== MOBILE ===== */
 @media(max-width:600px){
   body{
     padding:20px 12px;
@@ -165,4 +153,5 @@ button{
   #title{
     font-size:24px;
   }
+}
 }
